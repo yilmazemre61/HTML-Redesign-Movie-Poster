@@ -1,0 +1,584 @@
+body{
+    margin: 0px;
+}
+h1,h2,h3,h4{
+    color: #fff;
+}
+p, a{
+    color: #fff;
+}
+.container{
+    display: grid;
+}
+.text-container{
+    display: grid; 
+    grid-template-areas: 
+    "text-1"
+    "text-2"
+    "actors"
+    "movie-name"
+    "info";
+}
+img{
+    position: absolute;
+    width: 100%;
+    min-height: auto;
+    object-fit: cover;
+    z-index: -1;
+}
+.text-1 > h2{
+    text-align: center;
+    color: #000;
+    font-family: 'Zilla Slab', sans-serif;
+    font-weight: 400;
+    letter-spacing: 30px;
+    font-size: 35px;
+}
+.text-2 > h2{
+    text-align: center;
+    color: #000;
+    font-family: 'Zilla Slab', sans-serif;
+    font-weight: 400;
+    letter-spacing: 30px;
+    font-size: 35px;
+}
+.actors{
+    display: flex;
+    padding-top: 2000px;
+    justify-content: center;
+    column-gap: 300px;
+}
+.actor1 > h3 > a{
+    text-decoration: none;
+    letter-spacing: 25px;
+    color: red;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 25px;
+}
+.actor1 > h3 > a:hover{
+    cursor: grab;
+    transition: 1s;
+    color: #fff;
+}
+.actor2 > h3 > a{
+    text-decoration: none;
+    letter-spacing: 25px;
+    color: red;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 25px;
+}
+.actor2 > h3 > a:hover{
+    cursor: grab;
+    transition: 1s;
+    color: #fff;
+}
+.movie-name{
+    display: grid;
+}
+.movie-name .first > h3 > a:hover{
+    color: #fff;
+    cursor: grab;
+    transition: 1s;
+}
+.movie-name .first > h3{
+    text-align: center;
+}
+.movie-name .first > h3 > a{
+    text-decoration: none;
+    text-align: center;
+    color: #d3c5a2;
+    font-size: 30px;
+    letter-spacing: 5px;
+    font-family: 'Bona Nova', sans-serif;
+    padding-bottom: 0px;
+}
+.movie-name .second > h1 > a:hover{
+    color: #fff;
+    cursor: grab;
+    transition: 1s;
+}
+.movie-name .second > h1{
+    text-align: center;
+}
+.movie-name .second > h1 > a{
+    text-decoration: none;
+    letter-spacing: 50px;
+    font-family: 'Bona Nova', sans-serif;
+    font-size: 90px;
+    font-weight: 400;
+    color: #e5d6af;
+    padding-top: 0px;
+}
+.movie-name .third > h2 > a:hover{
+    color: #fff;
+    cursor: grab;
+    transition: 1s;
+}
+.movie-name .third > h2{
+    text-align: center;
+}
+.movie-name .third > h2 > a{
+    text-decoration: none;
+    text-align: center;
+    letter-spacing: 50px;
+    font-family: 'Bona Nova', sans-serif;
+    font-size: 50px;
+    font-weight: 400;
+    padding-top: 0px;
+    color: #d3c5a2;
+}
+.info{
+    display: grid;
+    margin-top: 50px;
+}
+.line1 > p{
+    text-align: center;
+    color: #4f4745;
+    letter-spacing: 2px;
+    font-size: 20px;
+    margin: 0px;
+}
+.line2{
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+    
+}
+.line2 > p{
+    color: #4f4745;
+    font-size: 20px;
+    margin: 0px;
+}
+.line3{
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+}
+.line3 > p{
+    color: #4f4745;
+    font-size: 20px;
+    margin: 0px;
+
+}
+.line3 .first-and {
+    font-size: 12px;
+    padding-top: 6px;
+}
+.line4{
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+}
+.line4 > p{
+    color: #4f4745;
+    font-size: 20px;
+    margin: 0px;
+}
+.line4 .second-and{
+    font-size: 12px;
+    padding-top: 6px;
+}
+.line5{
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+}
+.line5 > p{
+    color: #4f4745;
+    font-size: 20px;
+    margin: 0px;
+}
+
+/* MEDIA QUERIES */
+/* It will be affected untill 750px */
+
+@media screen and (min-width: 680px) and (max-width: 750px) {
+ 
+    .text-1 > h2{
+        letter-spacing: 10px;
+        font-size: 15px;
+    }
+    .text-2 > h2{
+        letter-spacing: 10px;
+        font-size: 15px;
+    }
+    .actors{
+        padding-top: 690px;
+        column-gap: 50px;
+    }
+    .actor1 > h3 > a{
+        letter-spacing: 5px;
+        font-size: 15px;
+    }
+
+    .actor2 > h3 > a{
+        letter-spacing: 5px;
+        font-size: 15px;
+    }
+
+    .movie-name .first > h3 > a{
+        font-size: 17px;
+        letter-spacing: 5px;
+    }
+   
+    .movie-name .second > h1 > a{
+        letter-spacing: 20px;
+        font-size: 40px;
+    }
+    .movie-name .third > h2 > a{
+        letter-spacing: 10px;
+        font-size: 35px;
+    }
+ 
+    .line1 > p{
+        letter-spacing: 2px;
+        font-size: 10px;
+    }
+    .line2{
+        column-gap: 5px;
+    }
+    .line2 > p{
+        font-size: 10px;
+    }
+    .line3{
+        column-gap: 5px;
+    }
+    .line3 > p{
+        font-size: 10px;
+    
+    }
+    .line3 .first-and {
+        font-size: 7px;
+        padding-top: 3px;
+    }
+    .line4{
+        column-gap: 5px;
+    }
+    .line4 > p{
+        font-size: 10px;
+    }
+    .line4 .second-and{
+        font-size: 7px;
+        padding-top: 3px;
+    }
+    .line5{
+        column-gap: 5px;
+    }
+    .line5 > p{
+        font-size: 10px;
+    }
+}
+
+/* From 751px to 850px  */
+
+@media screen and (min-width: 751px) and (max-width: 850px) {
+    .text-1 > h2{
+        letter-spacing: 12px;
+        font-size: 25px;
+    }
+    .text-2 > h2{
+        letter-spacing: 12px;
+        font-size: 25px;
+    }
+    .actors{
+        padding-top: 780px;
+        column-gap: 50px;
+    }
+    .actor1 > h3 > a{
+        letter-spacing: 5px;
+        font-size: 15px;
+    }
+
+    .actor2 > h3 > a{
+        letter-spacing: 5px;
+        font-size: 15px;
+    }
+
+    .movie-name .first > h3 > a{
+        font-size: 17px;
+        letter-spacing: 5px;
+    }
+   
+    .movie-name .second > h1 > a{
+        letter-spacing: 20px;
+        font-size: 40px;
+        font-weight: 400;
+    }
+    .movie-name .third > h2 > a{
+        letter-spacing: 10px;
+        font-size: 35px;
+    } 
+    .line1 > p{
+        letter-spacing: 2px;
+        font-size: 10px;
+    }
+    .line2{
+        column-gap: 5px;
+    }
+    .line2 > p{
+        font-size: 10px;
+    }
+    .line3{
+        column-gap: 5px;
+    }
+    .line3 > p{
+        font-size: 10px;
+    }
+    .line3 .first-and {
+        font-size: 7px;
+        padding-top: 3px;
+    }
+    .line4{
+        column-gap: 5px;
+    }
+    .line4 > p{
+        font-size: 10px;
+    }
+    .line4 .second-and{
+        font-size: 7px;
+        padding-top: 3px;
+    }
+    .line5{
+        column-gap: 5px;
+    }
+    .line5 > p{
+        font-size: 10px;
+    }
+}
+
+/* From 851px to 1000px  */
+
+@media screen and (min-width: 851px) and (max-width: 1000px) {
+    .text-1 > h2{
+        letter-spacing: 12px;
+        font-size: 25px;
+    }
+    .text-2 > h2{
+        letter-spacing: 12px;
+        font-size: 25px;
+    }
+    .actors{
+        padding-top: 950px;
+        column-gap: 50px;
+    }
+    .actor1 > h3 > a{
+        letter-spacing: 5px;
+        font-size: 15px;
+    }
+
+    .actor2 > h3 > a{
+        letter-spacing: 5px;
+        font-size: 15px;
+    }
+
+    .movie-name .first > h3 > a{
+        font-size: 17px;
+        letter-spacing: 5px;
+    }
+   
+    .movie-name .second > h1 > a{
+        letter-spacing: 20px;
+        font-size: 40px;
+    }
+    .movie-name .third > h2 > a{
+        letter-spacing: 10px;
+        font-size: 35px;
+    } 
+    .line1 > p{
+        letter-spacing: 2px;
+        font-size: 10px;
+    }
+    .line2{
+        column-gap: 5px;
+    }
+    .line2 > p{
+        font-size: 10px;
+        margin: 0px;
+    }
+    .line3{
+        column-gap: 5px;
+    }
+    .line3 > p{
+        font-size: 10px;
+    }
+    .line3 .first-and {
+        font-size: 7px;
+        padding-top: 3px;
+    }
+    .line4{
+        column-gap: 5px;
+    }
+    .line4 > p{
+        font-size: 10px;
+        margin: 0px;
+    }
+    .line4 .second-and{
+        font-size: 7px;
+        padding-top: 3px;
+    }
+    .line5{
+        column-gap: 5px;
+    }
+    .line5 > p{
+        font-size: 10px;
+        margin: 0px;
+    }
+}
+
+/* From 1001px to 1200px  */
+
+@media screen and (min-width: 1001px) and (max-width: 1200px) {
+    .text-1 > h2{
+        letter-spacing: 15px;
+        font-size: 30px;
+    }
+    .text-2 > h2{
+        letter-spacing: 15px;
+        font-size: 30px;
+    }
+    .actors{
+        padding-top: 1200px;
+        column-gap: 100px;
+    }
+    .actor1 > h3 > a{
+        letter-spacing: 7px;
+        font-size: 15px;
+    }
+
+    .actor2 > h3 > a{
+        letter-spacing: 7px;
+        font-size: 15px;
+    }
+
+    .movie-name .first > h3 > a{
+        font-size: 17px;
+        letter-spacing: 7px;
+    }
+   
+    .movie-name .second > h1 > a{
+        letter-spacing: 25px;
+        font-size: 45px;
+    }
+    .movie-name .third > h2 > a{
+        letter-spacing: 12px;
+        font-size: 40px;
+    } 
+    .line1 > p{
+        letter-spacing: 5px;
+        font-size: 12px;
+    }
+    .line2{
+        column-gap: 10px;
+    }
+    .line2 > p{
+        font-size: 12px;
+    }
+    .line3{
+        column-gap: 10px;
+    }
+    .line3 > p{
+        font-size: 12px;
+    }
+    .line3 .first-and {
+        font-size: 7px;
+        padding-top: 3px;
+    }
+    .line4{
+        column-gap: 10px;
+    }
+    .line4 > p{
+        font-size: 12px;
+    }
+    .line4 .second-and{
+        font-size: 7px;
+        padding-top: 3px;
+    }
+    .line5{
+        column-gap: 10px;
+    }
+    .line5 > p{
+        font-size: 12px;
+    }
+}
+
+/* From 1201px to 1600px  */
+
+@media screen and (min-width: 1201px) and (max-width: 1600px) {
+    .text-1 > h2{
+        letter-spacing: 20px;
+        font-size: 30px;
+    }
+    .text-2 > h2{
+        letter-spacing: 20px;
+        font-size: 30px;
+    }
+    .actors{
+        padding-top: 1500px;
+        column-gap: 200px;
+    }
+    .actor1 > h3 > a{
+        letter-spacing: 15px;
+        font-size: 25px;
+    }
+
+    .actor2 > h3 > a{
+        letter-spacing: 15px;
+        font-size: 25px;
+    }
+
+    .movie-name .first > h3 > a{
+        font-size: 25px;
+        letter-spacing: 7px;
+    }
+   
+    .movie-name .second > h1 > a{
+        letter-spacing: 40px;
+        font-size: 55px;
+    }
+    .movie-name .third > h2 > a{
+        letter-spacing: 40px;
+        font-size: 40px;
+    } 
+    .line1 > p{
+        letter-spacing: 2px;
+        font-size: 17px;
+        margin: 0px;
+    }
+    .line2{
+        column-gap: 10px;   
+    }
+    .line2 > p{
+        font-size: 17px;
+        margin: 0px;
+    }
+    .line3{
+        column-gap: 10px;
+    }
+    .line3 > p{
+        font-size: 17px;
+        margin: 0px;
+    
+    }
+    .line3 .first-and {
+        font-size: 10px;
+        padding-top: 4px;
+    }
+    .line4{
+        column-gap: 10px;
+    }
+    .line4 > p{
+        font-size: 17px;
+        margin: 0px;
+    }
+    .line4 .second-and{
+        font-size: 10px;
+        padding-top: 4px;
+    }
+    .line5{
+        column-gap: 10px;
+    }
+    .line5 > p{
+        font-size: 17px;
+        margin: 0px;
+    }
+}
